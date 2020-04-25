@@ -30,6 +30,8 @@ const ABR_URL = "https://abr.business.gov.au/json";
 const GUID = process.env.ABR_GUID;
 
 app.get("/abn/:key", async (req, res) => {
+  console.log("#CC searching by abn ", req.params.key, GUID);
+
   const response = await fetch(
     `${ABR_URL}/AbnDetails.aspx?abn=${req.params.key}&callback=callback&guid=${GUID}`
   );
@@ -41,6 +43,8 @@ app.get("/abn/:key", async (req, res) => {
 });
 
 app.get("/company/:key", async (req, res) => {
+  console.log("#CC searching by company ", req.params.key, GUID);
+
   const response = await fetch(
     `${ABR_URL}/MatchingNames.aspx?name=${req.params.key}&maxResults=20&callback=callback&guid=${GUID}`
   );
