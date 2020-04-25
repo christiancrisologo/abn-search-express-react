@@ -4,7 +4,7 @@ import { ACTION_TYPES } from "./";
 //   process.env.PORT || 4000
 // }`;
 
-const END_POINT = "api";
+const END_POINT = "/api";
 
 const asyncRequest = async function fetchAsync(url, options = {}) {
   console.log("#CC making a request at ", url);
