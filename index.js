@@ -29,7 +29,7 @@ function send(res, result, status = 200) {
 const ABR_URL = "https://abr.business.gov.au/json";
 const GUID = process.env.ABR_GUID;
 
-app.get("/abn/:key", async (req, res) => {
+app.get("/api/abn/:key", async (req, res) => {
   console.log("#CC searching by abn ", req.params.key, GUID);
 
   const response = await fetch(
@@ -42,7 +42,7 @@ app.get("/abn/:key", async (req, res) => {
   send(res, result);
 });
 
-app.get("/company/:key", async (req, res) => {
+app.get("/api/company/:key", async (req, res) => {
   console.log("#CC searching by company ", req.params.key, GUID);
 
   const response = await fetch(
