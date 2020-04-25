@@ -1,3 +1,7 @@
+Checkout the working demo : https://abn-search.herokuapp.com/
+
+![Working Demo Screenshot](demo-screenshot.png)
+
 ABN company search is a simple app that will let you search either ABN or a company. The inital search will be based on ABN if no records found it will try to search thru company name. The App uses the ABR Australia API (https://abr.business.gov.au/json/), all data and information are being maintained in the source website and not being redistributed or modified by this App.
 
 This project is created with ReactJS for UI client and ExpressJS for the backend server.

@@ -1,13 +1,9 @@
 import axios from "axios";
 import { ACTION_TYPES } from "./";
-// const END_POINT = `${window.location.protocol}//${window.location.hostname}:${
-//   process.env.PORT || 4000
-// }`;
 
 const END_POINT = "/api";
 
 const asyncRequest = async function fetchAsync(url, options = {}) {
-  console.log("#CC making a request at ", url);
   const response = await axios({
     url,
     method: options.method || "get",
