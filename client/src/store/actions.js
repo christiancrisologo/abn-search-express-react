@@ -1,6 +1,6 @@
 import axios from "axios";
 import { ACTION_TYPES } from "./";
-const END_POINT = `${window.location.protocol}//${window.location.hostname}:5000`;
+const END_POINT = `${window.location.protocol}//${window.location.hostname}:${process.env.PORT}`;
 
 const asyncRequest = async function fetchAsync(url, options = {}) {
   const response = await axios({
