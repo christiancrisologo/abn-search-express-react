@@ -4,7 +4,7 @@
   "description": "abn-search with express",
   "main": "index.js",
   "scripts": {
-    "build": "cd client/ && npm run build",
+    "build": "cd client/ && npm i && npm run build",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
